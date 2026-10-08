@@ -89,7 +89,25 @@ The notebook for Homework 1 is:
 
 Homework 1 uses the Iris flower dataset to build a supervised machine learning pipeline using scikit-learn to predict the flower class.
 
-## Dataset
+## Homework 2
+
+The notebook for Homework 2 is:
+
+`homework_2.ipynb`
+
+Homework 2 focuses on implementing and evaluating linear regression and regression trees from scratch using synthetic regression datasets.
+
+The synthetic datasets are generated using known true functions with added random noise.
+
+The main true functions used are:
+
+```text
+Linear: f(x) = 2x + 1
+Cubic:  f(x) = 0.5x^3 - x^2 + x
+f(x) = sin(2πx)
+```
+
+## Homework1 Dataset
 
 The Iris dataset used for this homework is from the UCI Machine Learning Repository:
 https://archive.ics.uci.edu/dataset/53/iris
@@ -152,4 +170,37 @@ To run Homework 1:
 1. Activate the virtual environment.
 2. Start JupyterLab.
 3. Open `homework_1.ipynb`.
+4. Run the notebook cells from top to bottom.
+
+## Homework 2 Workflow
+
+The notebook performs the following steps:
+1. Generate synthetic noisy regression datasets.
+2. Split each dataset into training and test sets.
+3. Implement linear regression from scratch using the closed-form solution.
+4. Evaluate linear regression using RMSE.
+5. Compare models using only x with models using x, x^2, and x^3.
+6. See how increasing polynomial degree affects training and test RMSE.
+7. Implement a regression tree from scratch using recursive binary splits.
+8. Generate candidate split thresholds using midpoints between consecutive unique feature values.
+9. Select the best tree split using variance reduction.
+10. se the mean target value of the records in a leaf as the regression-tree prediction.
+11. Control tree growth using the min_records hyperparameter.
+12. Visualize regression-tree predictions and split locations.
+13. Compare regression-tree RMSE with linear-regression RMSE.
+14. Analyze the effect of additional polynomial features on regression-tree performance.
+15. Analyze tree size using the number of nodes, leaves, and records per leaf.
+16. Study the effect of tree size and noise level on model performance.
+17. Generate a sinusoidal dataset using f(x) = sin(2πx) with noise level 0.2.
+18. Train regression trees using different min_records values.
+19. Compare training and test RMSE to study overfitting.
+20. Identify the best tree based on test RMSE.
+21. Analyze bias and variance for simple and complex regression trees.
+
+## Running Homework 2
+
+To run Homework 2:
+1. Activate the virtual environment.
+2. Start JupyterLab.
+3. Open homework_2.ipynb.
 4. Run the notebook cells from top to bottom.
